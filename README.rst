@@ -26,8 +26,8 @@ discogs-infrastructure once!
 
 The proxy is implemented in python/django - and basically involves two modules:
 
- - **dgsauth** which handles the credentials
- - **dgsproxy** which handles the requests
+- **dgsauth** which handles the credentials
+- **dgsproxy** which handles the requests
 
 The **dgsauth** module is built in a way that allows stand-alone usage (in django) and is built
 on top of `python-requests <http://docs.python-requests.org/>`_. It basically helps to go through
@@ -97,8 +97,8 @@ The **dgsauth** module provides you with a convenient management_command get the
 First you have to get an account and configure an app on discogs. Visit
 https://www.discogs.com/settings/developers and creat an application. For the next step you need to know your
 
- - "Consumer Key" and
- - "Consumer Secret"
+- "Consumer Key" and
+- "Consumer Secret"
 
 Equipped with these information, proceed with the dgsauth management-command:
 
@@ -164,23 +164,23 @@ TODO
 dgsauth settings
 """"""""""""""""
 
- - DGSAUTH_USER_AGENT_STRING
- - DGSAUTH_API_KEY
- - DGSAUTH_API_SECRET
- - DGSAUTH_API_ACCESS_TOKEN
- - DGSAUTH_API_ACCESS_SECRET
+- DGSAUTH_USER_AGENT_STRING
+- DGSAUTH_API_KEY
+- DGSAUTH_API_SECRET
+- DGSAUTH_API_ACCESS_TOKEN
+- DGSAUTH_API_ACCESS_SECRET
 
 
 dgsproxy settings
 """"""""""""""""
 
- - SITE_URL
- - DGSPROXY_USER_AGENT_STRING
- - DGSPROXY_CACHE_DIRECTORY
- - DGSPROXY_HASH_CACHE
- - DGSPROXY_HASH_SPLIT
- - DGSPROXY_CACHE_DURATION
- - DGSPROXY_CLEAR_CACHE_ON_SAVE
+- SITE_URL
+- DGSPROXY_USER_AGENT_STRING
+- DGSPROXY_CACHE_DIRECTORY
+- DGSPROXY_HASH_CACHE
+- DGSPROXY_HASH_SPLIT
+- DGSPROXY_CACHE_DURATION
+- DGSPROXY_CLEAR_CACHE_ON_SAVE
 
 
 
