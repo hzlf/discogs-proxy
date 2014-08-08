@@ -24,6 +24,10 @@ image multiple times, or firing the same search-query subsequently only needs to
 discogs-infrastructure once!
 
 
+Further the proxy rewrites the *resource_url*s - these are rewritten to the proxies *SITE_URL*.
+
+
+
 The proxy is implemented in python/django - and basically involves two modules:
 
 - **dgsauth** which handles the credentials
@@ -77,8 +81,6 @@ Tough it likely will run fine with sqlite as well if you don't expect heavy usag
     cp project/example_local_settings.py project/local_settings.py
     nano project/local_settings.py
 
-
-
     ./manage.py syncdb --all
     ./manage.py migrate --fake
 
@@ -126,9 +128,13 @@ Test your installation
 
     ./manage.py runserver 0.0.0.0:8000
 
-and access an API resource, like http://localhost:8000/image/R-35292-1332501840.jpeg !!
+and access an API resource, like
 
-This is only extremly alpha and just here for 'fun' - but there are minimal statistics displayed at
+- http://localhost:8000/image/R-35292-1332501840.jpeg
+- http://localhost:8000/releases/266364 (this EP is from me b.t.w :) )
+- http://localhost:8000/database/search?q=madonna (this EP is from me b.t.w :) )
+
+This is extremely alpha and just here for 'fun' - but there are minimal statistics displayed at
 http://localhost:8000/
 
 (note that the statistics only work if configure a cache backend, the defauld *LocMemCache*
@@ -147,7 +153,7 @@ Just remember, DON'T run this proxy on a public server without further steps!!
 It could be just fine to deploy it internally (say: internal network), using *supervisord* or a
 similar tool to control the process. (this is what we do...)
 
-I have plans to add a little nginx config-example, but not really with high priority...
+There are plans to add a little nginx config-example, but not really with high priority...
 Anyway, suggestons and improvements are warmly welcome!!
 
 

@@ -52,7 +52,7 @@ DATABASES = {
 
 """
 Optional. Cache is only required to display statistics.
-"""
+
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
@@ -60,4 +60,5 @@ CACHES = {
         'KEY_PREFIX': 'dgsproxy',
     }
 }
+"""
 
