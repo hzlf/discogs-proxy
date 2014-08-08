@@ -54,7 +54,7 @@ Code & requirements
 
 .. code-block::
 
-    git clone https://github.com/hzlf/discogs-proxy.git && cd dgs-proxy
+    git clone https://github.com/hzlf/discogs-proxy.git && cd discogs-proxy
 
     virtualenv env
     source env/bin/activate
