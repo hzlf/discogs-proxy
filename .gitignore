@@ -5,7 +5,7 @@
 .idea
 .project
 .pydevproject
-#fixtures
+data.sqlite3
 temp/
 changelog.txt
 website/project/local_settings.py
@@ -19,3 +19,4 @@ website/reports
 website/device_data
 website/static/CACHE
 website/data.sqlite3
+
