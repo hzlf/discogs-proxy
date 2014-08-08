@@ -157,6 +157,13 @@ There are plans to add a little nginx config-example, but not really with high p
 Anyway, suggestons and improvements are warmly welcome!!
 
 
+Deployment for legacy applications
+""""""""""""""""""""""""""""""""""
+
+There are dozens of scenarios on how to implement these kind of proxies, here just one use-case
+(the one here...): to not having touch legacy-code at all, you could setup the proxy-app inside
+(or on a server anywhere) and just add a dns entry in your site(s) internet-gateway that points
+ *api.discogs.com* to the proxy instance...
 
 
 
