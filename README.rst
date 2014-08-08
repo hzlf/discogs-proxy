@@ -1,4 +1,4 @@
-discogs oauth & caching proxy
+Discogs OAuth & caching proxy
 =============================
 
 A rather quick implementation of an auth-proxy for discogs.
